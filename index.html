@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Photography Business</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(8px);
+      display: flex;
+      justify-content: space-between;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+    }
+    section {
+      padding: 5rem 8%;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .about {
+      max-width: 800px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.4s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 16px;
+    }
+    .contact {
+      max-width: 600px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      border: none;
+    }
+    button {
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 999px;
+      background: #ffffff;
+      color: #000;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div><strong>YourBrand</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <div>
+      <h1>Capturing Timeless Moments</h1>
+      <p>Professional Photography • Weddings • Portraits • Travel</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p class="about">
+      I am a professional photographer focused on capturing authentic emotions and timeless visuals. With a cinematic approach and attention to detail, I create images that tell powerful stories.
+    </p>
+  </section>
+
+  <section id="gallery">
+    <h2>Portfolio</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" />
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" />
+      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429" />
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" />
+      <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6" />
+      <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f" />
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="card">Wedding Photography</div>
+      <div class="card">Portrait Sessions</div>
+      <div class="card">Commercial & Brand Shoots</div>
+      <div class="card">Travel & Lifestyle</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Your Email" />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button>Send Message</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Your Photography Business. All rights reserved.
+  </footer>
+
+</body>
+</html>
